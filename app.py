@@ -39,6 +39,17 @@ def reply():
             users.update_one({"number": number}, {"$set": {"status": "ordering"}})  # The $set operator replaces the value of a field with the specified value.
             response.message("You can select one of the following laptop types to order: \n\n1️⃣ Notebook  \n2️⃣ Ultraportable \n3️⃣ Chromebook"
                             "\n4️⃣ MacBook \n5️⃣ Convertible (2-in-1) \n6️⃣ Netbook \n7️⃣ Tablet as a laptop \n0️⃣ Go Back")
+            response.message("This are some pictures of our latest models👇.")
+            msg1 = response.message("")
+            msg2 = response.message("")
+            msg3 = response.message("")
+            msg4 = response.message("")
+            msg5 = response.message("")
+            msg1.media("https://www.apple.com/v/macbook-pro-14-and-16/b/images/overview/hero/intro__ewz1ro7xs14y_large.jpg")
+            msg2.media("https://cdn.pocket-lint.com/r/s/970x/assets/images/151520-laptops-review-hands-on-apple-macbook-air-2020-initial-review-keyboard-dreams-become-a-reality-image1-dwyvdpnsl7.jpg")
+            msg3.media("https://m.media-amazon.com/images/I/81fZmxBbQgL._AC_SL1500_.jpg")
+            msg4.media("https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-13-9315-2in1/media-gallery/blue/tablet-xps-13-9315-blue-gallery-10.psd?fmt=pjpg&pscan=auto&scl=1&wid=4465&hei=2394&qlt=100,1&resMode=sharp2&size=4465,2394&chrss=full&imwidth=5000")
+            msg5.media("https://lzd-img-global.slatic.net/g/p/8475993a5d85f746e17602ce60cde065.jpg_720x720q80.jpg_.webp")
         elif option == 3:
             response.message("We work everyday from *9 AM to 5 PM*.")
         elif option == 4:
